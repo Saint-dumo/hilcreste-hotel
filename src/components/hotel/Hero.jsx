@@ -11,8 +11,8 @@ import '../../styles/hero.css';
 const slides = [
   {
     eyebrow: 'WELCOME TO HILCRESTE',
-    title: 'Experience Comfort.',
-    highlight: 'Discover Elegance.',
+    title: 'Your Home Away From Home.',
+    // highlight: 'Discover Elegance.',
     description:
       'Discover a refined hospitality experience where comfort, thoughtful service and memorable moments come together.',
     button: 'EXPLORE OUR ROOMS',
@@ -36,7 +36,7 @@ const slides = [
   {
     eyebrow: 'DINING AT HILCRESTE',
     title: 'Savour Every Moment.',
-    highlight: 'Enjoy Every Flavour.',
+    // highlight: 'Enjoy Every Flavour.',
     description:
       'Discover welcoming dining experiences and thoughtfully prepared meals at our restaurant and lounge.',
     button: 'EXPLORE OUR RESTAURANT',
