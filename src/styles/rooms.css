@@ -1,0 +1,489 @@
+/* =========================================
+   ROOMS LISTING SECTION
+========================================= */
+
+.rooms-section {
+  padding: 75px 0 100px;
+  background: #f7f7f7;
+}
+
+.rooms-container {
+  width: 90%;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.rooms-header {
+  margin-bottom: 35px;
+}
+
+.rooms-header-content {
+  max-width: 600px;
+}
+
+.rooms-header .section-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--bronze);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.rooms-header h2 {
+  font-family: var(--font-body);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--olive);
+  margin-bottom: 12px;
+}
+
+.rooms-header p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   ROOM GRID
+========================================= */
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px 26px;
+  align-items: stretch;
+}
+
+/* =========================================
+   ROOM CARD
+========================================= */
+
+.room-card {
+  min-width: 0;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: none;
+  transition: box-shadow 0.25s ease;
+}
+
+.room-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.055);
+}
+
+/* =========================================
+   ROOM IMAGE
+========================================= */
+
+.room-card-gallery {
+  position: relative;
+  width: 100%;
+  height: 255px;
+  overflow: hidden;
+  background: var(--limestone);
+}
+
+.room-card-image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.room-card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.room-card:hover .room-card-image {
+  transform: scale(1.025);
+}
+
+/* =========================================
+   CAROUSEL NAVIGATION
+========================================= */
+
+.room-card-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--olive);
+
+  cursor: pointer;
+  z-index: 3;
+
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.room-card-arrow:hover {
+  background: var(--bronze);
+  color: #ffffff;
+}
+
+.room-card-arrow-prev {
+  left: 13px;
+}
+
+.room-card-arrow-next {
+  right: 13px;
+}
+
+/* =========================================
+   IMAGE INDICATORS
+========================================= */
+
+.room-card-indicators {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  z-index: 3;
+}
+
+.room-card-indicators button {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  padding: 0;
+
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+
+  background: transparent;
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.room-card-indicators button.active {
+  background: #ffffff;
+}
+
+/* =========================================
+   ROOM CONTENT
+========================================= */
+
+.room-card-content {
+  padding: 23px 21px 21px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.room-card-content h3 {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 700;
+  color: #292821;
+  margin-bottom: 11px;
+}
+
+.room-card-description {
+  color: #626262;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  min-height: 65px;
+}
+
+/* =========================================
+   ROOM CAPACITY
+========================================= */
+
+.room-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 19px;
+}
+
+.room-card-meta span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.room-card-meta svg {
+  color: var(--bronze);
+}
+
+/* =========================================
+   PRICE AND DISCOVER
+========================================= */
+
+.room-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  margin-top: auto;
+}
+
+.room-card-price {
+  color: #555;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.room-card-discover {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 15px;
+
+  background: var(--bronze);
+  color: var(--white);
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.room-card-discover:hover {
+  background: var(--olive);
+}
+
+/* =========================================
+   PRICE DISCLAIMER
+========================================= */
+
+.room-price-note {
+  margin-top: 28px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   SECTION FOOTER
+========================================= */
+
+.rooms-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.rooms-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--olive);
+  font-size: 12px;
+  font-weight: 700;
+
+  transition: var(--transition);
+}
+
+.rooms-view-all:hover {
+  color: var(--bronze);
+}
+
+/* =========================================
+   ROOM DETAIL GALLERY
+   PRESERVED FROM EXISTING DESIGN
+========================================= */
+
+.room-gallery {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.room-gallery-main {
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+  background: #e8e5de;
+}
+
+.room-gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.room-gallery-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.room-gallery-thumbnail {
+  height: 105px;
+  padding: 0;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  background: #e8e5de;
+}
+
+.room-gallery-thumbnail.active {
+  border-color: #a7835c;
+}
+
+.room-gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+  .rooms-container {
+    width: 92%;
+  }
+
+  .rooms-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 22px;
+  }
+
+  .room-card-gallery {
+    height: 245px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .rooms-section {
+    padding: 55px 0 70px;
+  }
+
+  .rooms-container {
+    width: 90%;
+  }
+
+  .rooms-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .rooms-header h2 {
+    font-size: 28px;
+  }
+
+  .room-card-gallery {
+    height: 270px;
+  }
+
+  .room-card-content {
+    padding: 21px;
+  }
+
+  .room-card-description {
+    min-height: auto;
+  }
+
+  .room-gallery-main {
+    height: 350px;
+  }
+
+  .room-gallery-thumbnail {
+    height: 75px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .room-gallery-main {
+    height: 270px;
+  }
+
+  .room-gallery-thumbnails {
+    gap: 7px;
+  }
+
+  .room-gallery-thumbnail {
+    height: 65px;
+  }
+
+}
+
+/* =========================================
+   HOMEPAGE FEATURED ROOMS
+========================================= */
+
+.featured-rooms-section {
+  background: var(--limestone);
+}
+
+.featured-rooms-section .rooms-grid {
+  gap: 28px;
+}
+
+.featured-rooms-section .rooms-footer {
+  margin-top: 40px;
+}
+
+/* =========================================
+   FULL ROOMS LISTING
+========================================= */
+
+.full-rooms-section {
+  min-height: 70vh;
+  background: #f7f7f7;
+}
+
+.full-rooms-section .rooms-header {
+  margin-bottom: 42px;
+}
+
+.full-rooms-section .rooms-grid {
+  row-gap: 38px;
+}
+
+@media (max-width: 600px) {
+  .featured-rooms-section .rooms-grid {
+    gap: 25px;
+  }
+
+  .full-rooms-section .rooms-header {
+    margin-bottom: 30px;
+  }
+}

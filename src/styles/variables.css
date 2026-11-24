@@ -1,0 +1,39 @@
+:root {
+  /* BRAND */
+  --olive: #303D32;
+  --olive-dark: #222E25;
+  --bronze: #A7835C;
+  --sage: #A7AD9B;
+
+  /* BACKGROUNDS */
+  --limestone: #F1EDE4;
+  --white: #FFFFFF;
+
+  /* TEXT */
+  --text-primary: #292821;
+  --text-secondary: #77776D;
+
+  /* BORDERS */
+  --border: #E3DED3;
+
+  /* TYPOGRAPHY */
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+
+  --font-size-small: 14px;
+  --font-size-body: 16px;
+  --font-size-nav: 15px;
+  --font-size-card-title: 20px;
+  --font-size-section-title: 42px;
+  --font-size-page-title: 52px;
+  --font-size-hero-title: 68px;
+
+  /* LAYOUT */
+  --container-width: 1280px;
+  --section-spacing: 100px;
+
+  /* EFFECTS */
+  --transition: 0.35s ease;
+  --radius-small: 3px;
+  --radius-medium: 6px;
+}

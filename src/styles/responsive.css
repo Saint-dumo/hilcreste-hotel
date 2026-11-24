@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 65px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
